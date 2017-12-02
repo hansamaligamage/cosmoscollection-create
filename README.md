@@ -2,9 +2,10 @@ This sample code is going to show how to create a database, collection & documen
 
 Solution has built on Visual Studio 2017 on .NET Core 2.0
 
-You can see code snippet to create the database, collection and document as below
+You can see code snippet to create the database, collection and document using Azure Cosmos DB SDK
 
-public async static Task CreateDatabase (string database)
+
+        public async static Task CreateDatabase (string database)
         {
             var db = await client.CreateDatabaseIfNotExistsAsync(new Database { Id = database});
         }
