@@ -4,6 +4,8 @@ Solution has built on Visual Studio 2017 on .NET Core 2.0
 
 You can see code snippet to create the database, collection and document using Azure Cosmos DB SDK
 
+You can go through this article and check how to trigger changes on Cosmos DB and execute an action using a Azure Function app, https://social.technet.microsoft.com/wiki/contents/articles/50897.create-a-trigger-on-azure-cosmos-db-using-a-function-app.aspx 
+
 
         public async static Task CreateDatabase (string database)
         {
