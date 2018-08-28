@@ -33,8 +33,10 @@ You can go through this article and check how to trigger changes on Cosmos DB an
             for (int i = 0; i < documentCount; i++)
             {
                 double speed = new Random().NextDouble() * 100;
-                VehicleSpeed vehicleSpeed = new VehicleSpeed { VehicleNumber = "KJ -7788", City = "Colombo", Speed = speed};
-                await client.CreateDocumentAsync(UriFactory.CreateDocumentCollectionUri(database, collection), vehicleSpeed);
+                VehicleSpeed vehicleSpeed = new VehicleSpeed { VehicleNumber = "KJ -7788", City = "Colombo",
+                Speed = speed};
+                await client.CreateDocumentAsync(UriFactory.CreateDocumentCollectionUri(database, collection),
+                vehicleSpeed);
             }
         }
 
