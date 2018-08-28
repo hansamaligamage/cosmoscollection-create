@@ -15,14 +15,15 @@ You can go through this article and check how to trigger changes on Cosmos DB an
         public async static Task CreateCollection(string database, string collection)
         {
 
-            var databasecollection = await client.CreateDocumentCollectionIfNotExistsAsync(UriFactory.CreateDatabaseUri(database),
-                new DocumentCollection { Id = collection });
+            var databasecollection = await client.CreateDocumentCollectionIfNotExistsAsync(
+            UriFactory.CreateDatabaseUri(database), new DocumentCollection { Id = collection });
         }
 
         public async static Task CreateDocument (string database, string collection, VehicleSpeed vehicleSpeed)
         {
 
-            await client.CreateDocumentAsync(UriFactory.CreateDocumentCollectionUri(database, collection), vehicleSpeed);
+            await client.CreateDocumentAsync(UriFactory.CreateDocumentCollectionUri(database, collection),
+            vehicleSpeed);
           
         }
 
